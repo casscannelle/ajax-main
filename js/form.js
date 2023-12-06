@@ -1,4 +1,3 @@
-
 const form = document.querySelector('#form');
 const nome = document.getElementById('nome');
 const cpf = document.getElementById('cpf');
