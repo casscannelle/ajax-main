@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <div class="container-form">
+
+    <h4>Faça seu cadastro</h4>
+    <form class="formulario" data-formulario>
+        <fieldset class="form-item">
+            <label class="form-label" for="nome">Nome</label>
+            <input name="nome" id="nome" class="input" type="text" minlength="2" required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset class="form-item">
+            <label class="form-label" for="email">E-mail</label>
+            <input name="email" id="email" class="input" type="email" minlength="4" required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset class="form-item">
+            <label class="form-label" for="cpf">CPF (apenas números)</label>
+            <input name="cpf" id="cpf" class="input" required type="text"
+            minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+
+        <fieldset class="form-item">
+            <label class="form-label" for="cep">CEP</label>
+            <input name="cep" id="cep" class="input" type="text"
+                required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+        <fieldset class="form-item">
+            <label class="form-label" for="endereco">Endereço</label>
+            <input name="endereco" id="endereco" class="input" type="text"
+                required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+        <fieldset class="form-item">
+            <label class="form-label" for="bairro">Bairro</label>
+            <input name="bairro" id="bairro" class="input" type="text"
+                required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+        <fieldset class="form-item">
+            <label class="form-label" for="cidade">Cidade</label>
+            <input name="cidade" id="cidade" class="input" type="text"
+                required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+        <fieldset class="form-item">
+            <label class="form-label" for="uf">UF</label>
+            <input name="uf" id="uf" class="input" type="text" minlength="2" maxlength="2"
+                required />
+            <span class="mensagem-erro"></span>
+        </fieldset>
+        
+
+        <div>
+            <div class="">
+                <button>Cadastrar</button>
+            </div>
+            <span class="mensagem-erro"></span>
+        </div>
+    </form>
+    </div>
+</footer>
+<script src="./js/forms.js" type="module"></script>
+</body>
+</body>
+</html>

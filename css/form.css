@@ -1,17 +1,39 @@
+body{
+    background-color: #fff;
+}
+
+.container-form {
+    margin: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 form {
-    border: 1px solid #999;
     border-radius: 1rem;
     padding: 1rem;
     margin: 2rem;
     background-color: #fff;
 }
-.input-group,
-input {
+
+.input {
     display: block;
     font-size: 1.8rem;
     width: 50rem;
-    margin: 1rem auto
+    margin: 1rem auto;
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
+
+.input:focus {
+    border: 1px solid #69bad3;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 
 label {
     font-size: 1.6rem;
@@ -25,6 +47,10 @@ button {
     color: #fff;
     font-size: 1.6rem;
     padding: 1rem 1.5rem;
+}
+
+button:hover {
+    opacity: 70%;
 }
 
 #mensagem p {

@@ -70,12 +70,6 @@ p {
     display: block;
 }
 
-input[type="text"] {
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
 
 .button {
     background-color: darkblue;
